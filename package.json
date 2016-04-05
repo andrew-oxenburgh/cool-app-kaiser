@@ -1,0 +1,25 @@
+{
+  "name": "cool-app-kaiser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-oxenburgh/cool-app-kaiser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-oxenburgh/cool-app-kaiser/issues"
+  },
+  "homepage": "https://github.com/andrew-oxenburgh/cool-app-kaiser#readme",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-exec": "^0.4.6"
+  }
+}
