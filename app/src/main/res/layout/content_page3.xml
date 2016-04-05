@@ -10,16 +10,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="oh_otto.nz.kaiserrewards.DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message"
-    android:id="@+id/content"
+    tools:context="oh_otto.nz.kaiserrewards.Page3"
+    tools:showIn="@layout/activity_page3"
+    android:id="@+id/page3"
     >
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"
-        />
 
 </RelativeLayout>

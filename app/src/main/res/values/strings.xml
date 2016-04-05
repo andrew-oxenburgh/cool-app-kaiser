@@ -2,6 +2,7 @@
     <string name="app_name">Kaiser Rewards Coraller</string>
     <string name="action_settings">Settings</string>
     <string name="button_send">Send</string>
-    <string name="edit_message">This is Kaiser</string>
+    <string name="edit_message">This is for Kaiser</string>
     <string name="title_activity_display_message">Message for Kaiser</string>
+    <string name="title_activity_page3">Page 3, if you can believe it</string>
 </resources>

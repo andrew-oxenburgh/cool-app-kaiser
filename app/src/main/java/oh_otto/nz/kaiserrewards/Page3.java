@@ -11,20 +11,16 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import static oh_otto.nz.kaiserrewards.OpeningPage.EXTRA_MESSAGE;
+public class Page3 extends AppCompatActivity {
 
-public class DisplayMessageActivity extends AppCompatActivity {
-
-    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_page3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -40,12 +36,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(EXTRA_MESSAGE);
-        textView = new TextView(this);
+        String message = intent.getStringExtra(OpeningPage.EXTRA_MESSAGE);
+        TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
 
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.page3);
         layout.addView(textView);
     }
 
@@ -71,17 +67,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_display_message,
+            View rootView = inflater.inflate(R.layout.activity_page3,
                     container, false);
             return rootView;
         }
     }
-
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, Page3.class);
-        String message = textView.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
-
 }
